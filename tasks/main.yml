@@ -31,11 +31,11 @@
     dest: "/etc/systemd/system/vector.service"
     mode: "0777"
     backup: true
-  notify: restart vector service
-- name: Vector start service
-  become: true
-  ansible.builtin.service:
-    name: vector
-    state: started
-    daemon_reload: true
-  notify: restart vector service
+#  notify: restart vector service
+#- name: Vector start service
+#  become: true
+#  ansible.builtin.service:
+#    name: vector
+#    state: started
+#    daemon_reload: true
+#  notify: restart vector service
